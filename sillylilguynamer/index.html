@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Silly Lil Guy Namer</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root">
+        <button name="getname" onclick="get_name()">Get Name</button>
+        <textarea name="guynamearea"></textarea>
+    </div>
+    <script type="text/javascript">
+        var names = ['Abernathy',
+            'Douglas',
+            'Lorne',
+            'Fuccboi Slim',
+            'Girlboss',
+            'Jimmy Ray Reese',
+            'Samanthalonginus',
+            'Namine Number 5',
+            'Bimpis',
+            'JOHN KINGDOMHEART',
+            'Egglord',
+            'Henricus Jeremias Leo III',
+            'Spaghetti - o',
+            'doofy',
+            'gonald',
+            'ratface kleebus',
+            'whale',
+            'Egg',
+            'Mister President',
+            'Proud Ryan',
+            'Spingbab',
+            'Gordon',
+            'ricardo montalban',
+            'bell hooks',
+            'Crumb',
+            'Flatbread Jimmy']
+        function get_name() {
+            document.getElementById('guynamearea').value = names[Math.floor(Math.random() * names.length)];
+        }
+    </script>
   </body>
 </html>
